@@ -17,6 +17,15 @@
 
 img {
     max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 /*dekstop version*/
@@ -34,21 +43,110 @@ img {
 
         .sidebar {
             height: 100%;
-            background-color: green;
+            background-color: black;
             width: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #75787c;
+            
+
+            
+            
 
             .list {
 
+                .logo {
+                    width: 90%;
+                    padding: 0.5rem 1.5rem;
+                }
+
+                
+
                 li {
 
-                    font-size: 1.2rem;
+                    font-size: 1rem;
+                    padding: 0.2rem 1.5rem;
+
+                    
 
                     .list_side_top {
-                        width: 10%;
-                        vertical-align: bottom;
+                        width: 25px;
+                        vertical-align: middle;
+                        filter: brightness(0.5);
+                        
+                    }
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+
+                .add_play {
+
+                    font-size: 1.2rem;
+                
+
+                    .plus {
+                        display: inline-block;
+                        height: 38px;
+                        width: 38px;
+                        background-color: gray;
+                        vertical-align: middle;
+                        position: relative;
+
+                        i {
+                            width: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 75%;
+                            transform: translate(-50%, -50%);
+                        }
                     }
                 }
             }
+
+            .list_side_bottom{
+
+                padding: 0 1rem;
+
+                a {
+                    display: block;
+                    padding: 0.5rem 0;
+
+
+                    img {
+                        width: 15px;
+                    }
+                }
+
+                hr {
+                    color: gray;
+                    border: 1px solid;
+                }
+
+                p {
+                    padding: 0.5rem 0;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        background-color: gray;
+                        border-radius: 50%;
+                    }
+                }
+
+
+            }
+
+
+
+
+
+
+
+
         }
 
         .card {
