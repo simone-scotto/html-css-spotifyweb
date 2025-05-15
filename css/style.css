@@ -1,0 +1,50 @@
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.debug {
+    * {
+        border: 1px solid black;
+    }
+}
+
+
+/*dekstop version*/
+
+.wrapper {
+    height: 100vh;
+    background-color: aquamarine;
+    
+    
+    .top {
+        height: calc(100% - 90px);
+        background-color: red;
+        display: flex;
+
+        .sidebar {
+            height: 100%;
+            background-color: green;
+            width: 230px;
+        }
+
+        .card {
+            height: 100%;
+            width: calc(100% - 230px);
+            background-color: rgb(210, 30, 192);
+        }
+    }
+
+
+    
+
+    .bottom {
+        height: 90px;
+        background-color: yellow;
+    }
+}
+
