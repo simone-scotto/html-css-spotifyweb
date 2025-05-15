@@ -13,12 +13,18 @@
     }
 }
 
+/*common*/
+
+img {
+    max-width: 100%;
+}
 
 /*dekstop version*/
 
 .wrapper {
     height: 100vh;
     background-color: aquamarine;
+    overflow: hidden;
     
     
     .top {
@@ -30,12 +36,32 @@
             height: 100%;
             background-color: green;
             width: 230px;
+
+            .list {
+
+                li {
+
+                    font-size: 1.2rem;
+
+                    .list_side_top {
+                        width: 10%;
+                        vertical-align: bottom;
+                    }
+                }
+            }
         }
 
         .card {
             height: 100%;
             width: calc(100% - 230px);
             background-color: rgb(210, 30, 192);
+            overflow-y: auto;
+
+            .nav {
+                height: 90px;
+                background-color: rgba(0, 17, 255, 0.403);
+                
+            }
         }
     }
 
