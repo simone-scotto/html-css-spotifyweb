@@ -88,11 +88,13 @@ li {
                 h2 {
                     font-size: 1rem;
                     text-transform: uppercase;
+                    padding: 0.2rem 1.5rem;
                 }
 
                 .add_play {
 
                     font-size: 1.2rem;
+                    padding: 0.2rem 1.5rem;
                 
 
                     .plus {
@@ -201,6 +203,19 @@ li {
                 .col {
                     width: calc(100% / 12 * 2);
                     padding: 0 0.5rem;
+
+
+                    .card_body {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+
+                        p {
+                            padding: 0.5rem 0;
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
