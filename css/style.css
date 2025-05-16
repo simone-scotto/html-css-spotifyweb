@@ -10,7 +10,14 @@
 .debug {
     * {
         border: 1px solid black;
+
+
+        .col {
+            min-height: 260px;
+        }
     }
+
+
 }
 
 /*common*/
@@ -149,16 +156,52 @@ li {
 
         }
 
-        .card {
+        .album {
             height: 100%;
             width: calc(100% - 230px);
             background-color: rgb(210, 30, 192);
             overflow-y: auto;
+            padding: 0 1rem;
 
             .nav {
                 height: 90px;
                 background-color: rgba(0, 17, 255, 0.403);
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0 -1rem;
                 
+                a {
+                    border: 2px solid white;
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
+                    margin-right: 0.5rem;
+                }
+
+
+
+            }
+
+            .card_menu_top {
+                text-align: center;
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 0.7rem;
+                    display: inline-block;
+                    padding: 0.5rem;
+                    font-weight: bold;
+                }
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+
+                .col {
+                    width: calc(100% / 12 * 2);
+                    padding: 0 0.5rem;
+                }
             }
         }
     }
