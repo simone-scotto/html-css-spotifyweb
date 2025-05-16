@@ -229,10 +229,13 @@ li {
         background-color: yellow;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
 
         .like_song {
             display: flex;
-            align-items: center;
+            max-width: 230px;
+            
 
             .brano {
                 display: flex;
@@ -255,24 +258,61 @@ li {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 0.5rem;
+
+            .commands {
+                width: 190px;             
+                display: flex;
+                justify-content: space-between;
+            }
 
             .time {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 520px;
 
                 .time_total {
-                    height: 4px;
+                    height: 5px;
                     width: 426px;
                     background-color: gray;
 
                     .time_actual {
-                        height: 4px;
+                        height: 5px;
                         width: 85px;
                         background-color: white;
                     }
                 }
             }
+        }
+
+        .volume {
+
+            
+            width: 210px;
+            justify-content: space-between;
+            
+
+            .icon_left {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .volume_right_total {
+                    width: 118px;
+                    height: 5px;
+                    background-color: gray;
+
+                    .volume_right_actual {
+                        height: 5px;
+                        width: 25px;
+                        background-color: white;
+
+                    }
+
+                }
+            }
+
         }
 
     }
