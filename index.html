@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+    <!--font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
-<body class="debug">
+<body >
     <div class="wrapper">
         <div class="top">
 
@@ -55,7 +62,7 @@
                         </ul>
                     </div>
                     <div class="playlist">
-                        <h2>Playlist</h2>                      
+                        <p>Playlist</p>                      
                         <a class="add_play" href="#">
                             <div class="plus">
                                 <i class="fa-solid fa-plus"></i>
@@ -111,7 +118,7 @@
             <!--main-->
 
 
-            <main class="album">
+            <main>
 
                 <!--navbar-->
 
@@ -123,230 +130,222 @@
 
                 <!--main menu-->
 
+                <div class="album">
 
-                <div class="card_menu_top">
-                    <a href="#">in evidenza</a>
-                    <a href="#">Podcast</a>
-                    <a href="#">Classifica</a>
-                    <a href="#">Generi e mood</a>
-                    <a href="#">nuove uscite</a>
-                    <a href="#">scopri</a>
-                </div>
 
-                <!--cards-->
-
-                <h2>Recently played</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
-
-                            </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    heavy metal
-
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
-                        </div>
-
+                    <div class="card_menu_top">
+                        <a href="#">in evidenza
+                            <div class="greenborder"></div>
+                        </a>
+                        <a href="#">Podcast</a>
+                        <a href="#">Classifica</a>
+                        <a href="#">Generi e mood</a>
+                        <a href="#">nuove uscite</a>
+                        <a href="#">scopri</a>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/stranger.jpeg" alt="stranger">
 
+                    <!--cards-->
+
+                    <h2>Recently played</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/metal_lifting.jpg" alt="metal">
+
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        heavy metal
+
+                                    </p>
+                                    <p class="artist">
+                                        subtitle
+
+                                    </p>
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    Stranger Things, Vol.1 (a Netflix Original Series Soundrack)
 
-                                </p>
-                                <p class="artist">
-                                    Kyle Dixon & Michael Stein
-
-                                </p>
-
-                            </div>
                         </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/stranger.jpeg" alt="stranger">
 
-                        
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/aquietplace.jpeg" alt="awuietplace">
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Stranger Things, Vol.1 (a Netflix Original Series Soundrack)
 
+                                    </p>
+                                    <p class="artist">
+                                        Kyle Dixon & Michael Stein
+
+                                    </p>
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    A quiet place 
 
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/split.jpeg" alt="split">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/aquietplace.jpeg" alt="awuietplace">
 
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        A quiet place 
+
+                                    </p>
+                                    <p class="artist">
+                                        subtitle
+
+                                    </p>
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    Split
-
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/cure.jpeg" alt="cure">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/split.jpeg" alt="split">
 
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Split
+
+                                    </p>
+                                    <p class="artist">
+                                        subtitle
+
+                                    </p>
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    A cure for wellness
-
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/sinister.jpeg" alt="metal">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/cure.jpeg" alt="cure">
 
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        A cure for wellness
+
+                                    </p>
+                                    <p class="artist">
+                                        subtitle
+
+                                    </p>
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    Sinister
-
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
+                            
                         </div>
-                        
-                    </div>
-                </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/sinister.jpeg" alt="metal">
 
-                <h2>Creato per John Doe</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Sinister
 
+                                    </p>
+                                    <p class="artist">
+                                        subtitle
+
+                                    </p>
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    heavy metal
-
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/stranger.jpeg" alt="stranger">
-
-                            </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    Stranger Things, Vol.1 (a Netflix Original Series Soundrack)
-
-                                </p>
-                                <p class="artist">
-                                    Kyle Dixon & Michael Stein
-
-                                </p>
-
-                            </div>
+                            
                         </div>
                     </div>
-                </div>
-                
-                <h2>Creato per John Doe</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
 
+                    <h2>Creato per John Doe</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/radar.jpeg" alt="radar">
+
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Release Radar
+
+                                    </p>
+                                    
+
+                                </div>
                             </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    heavy metal
 
-                                </p>
-                                <p class="artist">
-                                    subtitle
-
-                                </p>
-
-                            </div>
                         </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img src="./img/mixdaily.jpeg" alt="mixdaily">
 
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card_head">
-                                <img src="./img/stranger.jpeg" alt="stranger">
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Daily Mix 1
 
-                            </div>
-                            <div class="card_body">
-                                <p class="song">
-                                    Stranger Things, Vol.1 (a Netflix Original Series Soundrack)
+                                    </p>
+                                    
 
-                                </p>
-                                <p class="artist">
-                                    Kyle Dixon & Michael Stein
-
-                                </p>
-
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
                     
+                    <h2>Creato per John Doe</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img class="rounded" src="./img/youg.jpeg" alt="young">
+
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Lana Del Rey
+
+                                    </p>
+                                    
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card_head">
+                                    <img class="rounded" src="./img/einaudi.jpeg" alt="einaudi">
+
+                                </div>
+                                <div class="card_body">
+                                    <p class="song">
+                                        Ludovico Einaudi
+
+                                    </p>
+                                   
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>    
 
             </main>
         </div>
@@ -412,7 +411,7 @@
                     <i class="fa-solid fa-volume-high"></i>
                     <div class="volume_right_total">
                         <div class="volume_right_actual">
-                            
+
                         </div>
 
                     </div>

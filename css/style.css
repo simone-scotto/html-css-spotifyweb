@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+   
 }
 
 
@@ -29,11 +31,67 @@ img {
 
 a {
     text-decoration: none;
+    position: relative;
+
+    
 }
+
+
+
+a:visited {
+    color: currentColor;
+}
+
+.greenborder {
+    width: 20px;
+    height: 3px;
+    background: red;
+    margin: 0 auto;
+    visibility: hidden;
+
+    
+}
+
+
+
+a:hover {
+    color: white;
+
+    .greenborder {
+    visibility: visible;
+    }
+
+   
+    
+}
+
+
+
+
+
+
+
 
 li {
     list-style: none;
 }
+
+h2 {
+    color: white;
+}
+
+.song {
+    color: white;
+}
+
+.artist {
+    color: #75787c;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
 
 /*dekstop version*/
 
@@ -56,6 +114,9 @@ li {
             flex-direction: column;
             justify-content: space-between;
             color: #75787c;
+            font-size: 0.7rem;
+            font-weight: 700;
+            overflow: hidden;
             
 
             
@@ -72,7 +133,7 @@ li {
 
                 li {
 
-                    font-size: 1rem;
+                    
                     padding: 0.2rem 1.5rem;
 
                     
@@ -85,15 +146,17 @@ li {
                     }
                 }
 
-                h2 {
-                    font-size: 1rem;
+                p {
+                    
                     text-transform: uppercase;
                     padding: 0.2rem 1.5rem;
+                    font-weight: 800;
+                    font-size: 0.8rem;
                 }
 
                 .add_play {
 
-                    font-size: 1.2rem;
+                    
                     padding: 0.2rem 1.5rem;
                 
 
@@ -104,14 +167,22 @@ li {
                         background-color: gray;
                         vertical-align: middle;
                         position: relative;
+                        margin: 0.5rem 0;
 
                         i {
-                            width: 100%;
+                            
                             position: absolute;
                             top: 50%;
-                            left: 75%;
+                            left: 50%;
                             transform: translate(-50%, -50%);
                         }
+                    }
+                }
+
+                .bott_list {
+                    
+                    li {
+                        padding: 0.3rem 1.5rem;
                     }
                 }
             }
@@ -127,6 +198,7 @@ li {
 
                     img {
                         width: 15px;
+                        margin-right: 0.5rem;
                     }
                 }
 
@@ -137,12 +209,16 @@ li {
 
                 p {
                     padding: 0.5rem 0;
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                    
 
                     img {
                         width: 30px;
                         height: 30px;
                         background-color: gray;
                         border-radius: 50%;
+                        margin-right: 0.5rem;
                     }
                 }
 
@@ -158,63 +234,99 @@ li {
 
         }
 
-        .album {
-            height: 100%;
+
+        main {
             width: calc(100% - 230px);
-            background-color: rgb(210, 30, 192);
-            overflow-y: auto;
             padding: 0 1rem;
+            font-size: 0.9rem;
+            font-weight: 800;
+            overflow: hidden;
+        
+
 
             .nav {
-                height: 90px;
-                background-color: rgba(0, 17, 255, 0.403);
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+                    height: 90px;
+                    background-color: #080b12;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin: 0 -1rem;
+                    
+                    a {
+                        border: 2px solid white;
+                        padding: 0.5rem 1rem;
+                        border-radius: 20px;
+                        margin-right: 0.5rem;
+                        text-transform: uppercase;
+                        font-size: 0.7rem;
+                        color: white;
+                    }
+
+
+
+            }
+
+
+
+
+
+
+
+            .album {
+                height: 100%;
+                background-color: #141922;
+                overflow-y: auto;
+                padding: 0 1rem;
                 margin: 0 -1rem;
+                padding-bottom: 90px;
+
                 
-                a {
-                    border: 2px solid white;
-                    padding: 0.5rem 1rem;
-                    border-radius: 20px;
-                    margin-right: 0.5rem;
+
+                .card_menu_top {
+                    text-align: center;
+                    color: #75787c;
+
+                    a {
+                        text-transform: uppercase;
+                        font-size: 0.7rem;
+                        display: inline-block;
+                        padding: 0.5rem;
+                        font-weight: bold;
+                    }
                 }
 
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 1rem -1rem;
+
+                    .col {
+                        width: calc(100% / 12 * 2);
+                        
+                        
+
+                        .card {
+                            
+                            padding: 0 1rem;
+                        
 
 
-            }
-
-            .card_menu_top {
-                text-align: center;
-
-                a {
-                    text-transform: uppercase;
-                    font-size: 0.7rem;
-                    display: inline-block;
-                    padding: 0.5rem;
-                    font-weight: bold;
-                }
-            }
-
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-
-                .col {
-                    width: calc(100% / 12 * 2);
-                    padding: 0 0.5rem;
+                            .card_body {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
 
 
-                    .card_body {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                                .song {
+                                    padding: 0.5rem 0;
+                                    text-align: center;
+                                }
 
-
-                        p {
-                            padding: 0.5rem 0;
-                            text-align: center;
-                        }
+                                .artist{
+                                    font-size: 0.7rem;
+                                }
+                            }
+                        }   
                     }
                 }
             }
@@ -226,19 +338,24 @@ li {
 
     .bottom {
         height: 90px;
-        background-color: yellow;
+        background-color: #282828;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem;
+        color: white;
+        font-size: 0.7rem;
 
         .like_song {
             display: flex;
-            max-width: 230px;
+            width: 200px;
+            justify-content: space-between;
             
 
             .brano {
                 display: flex;
+                align-items: center;
+                
 
                 img {
                     width: 43px;
@@ -249,6 +366,8 @@ li {
 
             .like {
                 align-self: center;
+                color: #75787c;
+                font-size: 0.9rem;
             }
 
             
@@ -259,28 +378,33 @@ li {
             flex-direction: column;
             align-items: center;
             gap: 0.5rem;
+            width: 30%;
 
             .commands {
                 width: 190px;             
                 display: flex;
                 justify-content: space-between;
+                font-size: 1rem;
             }
 
             .time {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 520px;
+                width: 100%;
+                font-size: 0.6rem;
 
                 .time_total {
                     height: 5px;
-                    width: 426px;
+                    width: 85%;
                     background-color: gray;
+                    border-radius: 3px;
 
                     .time_actual {
                         height: 5px;
-                        width: 85px;
+                        width: 25%;
                         background-color: white;
+                        border-radius: 3px;
                     }
                 }
             }
@@ -289,7 +413,7 @@ li {
         .volume {
 
             
-            width: 210px;
+            width: 200px;
             justify-content: space-between;
             
 
@@ -302,11 +426,13 @@ li {
                     width: 118px;
                     height: 5px;
                     background-color: gray;
+                    border-radius: 3px;
 
                     .volume_right_actual {
                         height: 5px;
                         width: 25px;
                         background-color: white;
+                        border-radius: 3px;
 
                     }
 
