@@ -15,9 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
+    <!--META-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
+
+
+
+
 <body >
     <div class="wrapper">
         <div class="top">
@@ -39,24 +47,32 @@
 
                     <div class="menu_list">
                         <ul>
+                            
+                             
                             <li>
-                                <a href="#">
+                            
+                                <a class="relative" href="#">
                                     
-                                    <img class="list_side_top" src="./img/home.svg" alt="home">
-                                        
+                                    
+                                    <img class="list_side_top" src="./img/home.svg" alt="home">                                       
                                     Home
+                                    <div class="greenborder_list"></div>
                                 </a>
+                            
+                                
                             </li>
                             <li>
-                                <a href="#">
+                                <a class="relative" href="#">
                                     <img class="list_side_top" src="./img/search.svg" alt="search">
                                     Cerca
+                                    <div class="greenborder_list"></div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a class="relative" href="#">
                                     <img class="list_side_top" src="./img/libreria.svg" alt="libreria">
                                     La tua libreria
+                                    <div class="greenborder_list"></div>
                                 </a>
                             </li>
                         </ul>
@@ -134,24 +150,38 @@
 
 
                     <div class="card_menu_top">
-                        <a href="#">in evidenza
-                            <div class="greenborder"></div>
+                        <a class="relative" href="#">in evidenza
+                            <div class="greenborder_main"></div>
                         </a>
-                        <a href="#">Podcast</a>
-                        <a href="#">Classifica</a>
-                        <a href="#">Generi e mood</a>
-                        <a href="#">nuove uscite</a>
-                        <a href="#">scopri</a>
+                        <a class="relative" href="#">Podcast
+                            <div class="greenborder_main"></div>
+                        </a>
+                        <a class="relative" href="#">Classifica
+                            <div class="greenborder_main"></div>
+                        </a>
+                        <a class="relative" href="#">Generi e mood
+                            <div class="greenborder_main"></div>
+                        </a>
+                        <a class="relative"  href="#">nuove uscite
+                            <div class="greenborder_main"></div>
+                        </a>
+                        <a class="relative" href="#">scopri
+                            <div class="greenborder_main"></div>
+                        </a>
                     </div>
 
                     <!--cards-->
 
                     <h2>Recently played</h2>
                     <div class="row">
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/metal_lifting.jpg" alt="metal">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
+                                    
 
                                 </div>
                                 <div class="card_body">
@@ -168,10 +198,13 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative"">
                                     <img src="./img/stranger.jpeg" alt="stranger">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -189,10 +222,13 @@
 
                             
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/aquietplace.jpeg" alt="awuietplace">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -209,10 +245,13 @@
                             </div>
                             
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/split.jpeg" alt="split">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -229,10 +268,13 @@
                             </div>
                             
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/cure.jpeg" alt="cure">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -249,10 +291,13 @@
                             </div>
                             
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/sinister.jpeg" alt="metal">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -273,10 +318,13 @@
 
                     <h2>Creato per John Doe</h2>
                     <div class="row">
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/radar.jpeg" alt="radar">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -290,10 +338,13 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                                    <div class="play_hover">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -310,10 +361,13 @@
                     
                     <h2>Creato per John Doe</h2>
                     <div class="row">
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
+                                <div class="card_head relative">
                                     <img class="rounded" src="./img/youg.jpeg" alt="young">
+                                    <div class="play_hover rounded">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
@@ -327,10 +381,14 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col col_md_3">
                             <div class="card">
-                                <div class="card_head">
-                                    <img class="rounded" src="./img/einaudi.jpeg" alt="einaudi">
+                                <div class="card_head relative">
+                                    <img class="rounded" src="./img/einaudi.jpeg" 
+                                    alt="einaudi">
+                                    <div class="play_hover rounded">
+                                        <i class="fa-regular fa-circle-play play_hover_play"></i>
+                                    </div>
 
                                 </div>
                                 <div class="card_body">
