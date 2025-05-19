@@ -77,12 +77,12 @@ h2 {
     height: 100%;
     position: absolute;
     top: 0;
-    visibility: hidden;
+    
 }
 
 .greenborder_main {
     background-color: greenyellow;
-    visibility: hidden;
+    
     position: absolute;
     width: 30%;
     height: 15%;  
@@ -99,20 +99,13 @@ h2 {
 
 /* hover */
 
-a:hover {
+
+
+li:hover {
     color: white;
-
-    .greenborder_list {
-    visibility: visible;
-    }
-
-    .greenborder_main {
-        visibility: visible;
-    }
-
+    cursor: pointer;
 
    
-    
 }
 
 .card_head:hover {
@@ -132,6 +125,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     visibility: hidden;
+    cursor: pointer;
 }
 .play_hover_play {
     color: white;
@@ -139,6 +133,8 @@ a:hover {
     cursor: pointer;
     
 }
+
+
 
 
 /*dekstop version*/
@@ -192,15 +188,46 @@ a:hover {
                     display: flex;
                     align-items: flex-start;
 
+                    .white {
+                        color: white;
+
                     
 
-                    .list_side_top {
-                        width: 25px;
-                        vertical-align: middle;
-                        filter: brightness(0.5);
-                        margin-left: 1.5rem;
-                        
+                     
+
+                        .list_side_top_white {
+                            width: 25px;
+                            vertical-align: middle;
+                            filter: brightness(1);
+                            margin-left: 1.5rem;
+                            color: white;
+                            
+
+                        }
+
                     }
+
+                        .list_side_top {
+                            width: 25px;
+                            vertical-align: middle;
+                            filter: brightness(0.5);
+                            margin-left: 1.5rem;
+                                
+                        }
+
+
+                        
+                    
+
+                    
+                    
+                }
+
+                li:hover {
+                        .list_side_top {
+                            filter: brightness(1);
+                            color: white;
+                        }
                 }
 
                 p {
@@ -209,6 +236,7 @@ a:hover {
                     padding: 0.2rem 1.5rem;
                     font-weight: 800;
                     font-size: 0.8rem;
+                    color: white;
                 }
 
                 .add_play {
@@ -225,6 +253,8 @@ a:hover {
                         vertical-align: middle;
                         position: relative;
                         margin: 0.5rem 0;
+                        color: #080b12;
+                        font-size: 1.3rem;
 
                         i {
                             
@@ -234,6 +264,15 @@ a:hover {
                             transform: translate(-50%, -50%);
                         }
                     }
+                    
+                   
+                }
+
+                .add_play:hover {
+                        color: white;
+                        .plus {
+                            background-color: white;
+                        }
                 }
 
                 .bott_list {
@@ -244,12 +283,15 @@ a:hover {
                 }
             }
 
+
+            
+
             .list_side_bottom{
 
                 padding: 0 1rem;
 
                 a {
-                    display: block;
+                    display: flex;
                     padding: 0.5rem 0;
 
 
@@ -281,6 +323,12 @@ a:hover {
                 }
 
 
+            }
+
+            .list_side_bottom:hover {
+                p {
+                    color: white;
+                }
             }
 
 
@@ -318,7 +366,13 @@ a:hover {
                         text-transform: uppercase;
                         font-size: 0.7rem;
                         color: white;
+
+                        
                     }
+
+                    a:hover {
+                            scale: 1.05;
+                        }
 
 
 
@@ -441,7 +495,14 @@ a:hover {
                 align-self: center;
                 color: #75787c;
                 font-size: 0.9rem;
+
+                span:hover {
+                    color: white;
+                    cursor: pointer;
+                }
             }
+
+            
 
             
         }
@@ -458,6 +519,16 @@ a:hover {
                 display: flex;
                 justify-content: space-between;
                 font-size: 1rem;
+                align-items: center;
+
+                .round_play {
+                    font-size: 2rem;
+                }
+
+                .round_play:hover {
+                    cursor: pointer;
+                    scale: 1.05;
+                }
             }
 
             .time {
@@ -479,6 +550,35 @@ a:hover {
                         width: 25%;
                         background-color: white;
                         border-radius: 3px;
+                        position: relative;
+
+
+                        
+
+                        .time_control {
+                            height: 15px;
+                            width: 15px;
+                            
+                            border-radius: 50%;
+                            background: white;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            transform: translate(40%, -30%);
+                            cursor: pointer;
+                            visibility: hidden;
+
+                        }
+                    }
+
+                    /*hover green time bar */
+
+                    .time_actual:hover {
+                            background-color: greenyellow;
+
+                            .time_control {
+                                visibility: visible;
+                            }
                     }
                 }
             }
@@ -507,8 +607,36 @@ a:hover {
                         width: 25%;
                         background-color: white;
                         border-radius: 3px;
+                        position: relative;
+
+                        .volume_control {
+                            height: 15px;
+                            width: 15px;
+                            
+                            border-radius: 50%;
+                            background: white;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            transform: translate(40%, -30%);
+                            cursor: pointer;
+                            visibility: hidden;
+
+                        }
+
+
 
                     }
+
+                    .volume_right_actual:hover {
+                         background-color: greenyellow;
+
+                            .volume_control {
+                                visibility: visible;
+                            }
+
+                    }
+                    
 
                 }
             }
