@@ -94,23 +94,7 @@ h2 {
 
 
 
-.play_hover {
-    background-color: #000000cc;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-}
-.play_hover_play {
-    color: white;
-    font-size: 3rem;
-    cursor: pointer;
-    
-}
+
 
 
 /* hover */
@@ -138,6 +122,23 @@ a:hover {
 
 }
 
+.play_hover {
+    background-color: #000000cc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.play_hover_play {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
 
 
 /*dekstop version*/
@@ -172,9 +173,14 @@ a:hover {
 
             .list {
 
-                .logo {
+                .logo_big {
                     width: 90%;
                     padding: 0.5rem 1.5rem;
+                }
+
+                .logo_small {
+                    display: none;
+
                 }
 
                 
@@ -256,9 +262,10 @@ a:hover {
                 hr {
                     color: gray;
                     border: 1px solid;
+
                 }
 
-                p {
+                .gray_round {
                     padding: 0.5rem 0;
                     font-size: 0.8rem;
                     font-weight: 800;
@@ -336,6 +343,11 @@ a:hover {
                 .card_menu_top {
                     text-align: center;
                     color: #75787c;
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
 
                     a {
                         text-transform: uppercase;
@@ -353,16 +365,15 @@ a:hover {
 
                     .col {
                         width: calc(100% / 12 * 2);
+                         padding: 0 1rem;
                         
                         
 
                         .card {
                             
-                            padding: 0 1rem;
+                           
 
-                            .card_head {
-                                width: 178px;
-                            }
+                            
                         
 
 
@@ -403,19 +414,26 @@ a:hover {
 
         .like_song {
             display: flex;
-            width: 200px;
-            justify-content: space-between;
+            width: 180px;
+            justify-content: space-evenly;
             
 
             .brano {
                 display: flex;
                 align-items: center;
+                margin-right: 0.5rem;
                 
 
                 img {
                     width: 43px;
                     height: 43px;
 
+                }
+
+                .brano_details {
+                    padding-left: 0.5rem;
+                    
+                    
                 }
             }
 
@@ -433,10 +451,10 @@ a:hover {
             flex-direction: column;
             align-items: center;
             gap: 0.5rem;
-            width: 30%;
+            width: calc(100% / 12 * 5);
 
             .commands {
-                width: 190px;             
+                width: 160px;             
                 display: flex;
                 justify-content: space-between;
                 font-size: 1rem;
@@ -454,6 +472,7 @@ a:hover {
                     width: 85%;
                     background-color: gray;
                     border-radius: 3px;
+                    margin: 0 0.5rem;
 
                     .time_actual {
                         height: 5px;
@@ -468,24 +487,24 @@ a:hover {
         .volume {
 
             
-            width: 200px;
+            width: 180px;
             justify-content: space-between;
             
 
             .icon_left {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-evenly;
 
                 .volume_right_total {
-                    width: 118px;
+                    width: 60%;
                     height: 5px;
                     background-color: gray;
                     border-radius: 3px;
 
                     .volume_right_actual {
                         height: 5px;
-                        width: 25px;
+                        width: 25%;
                         background-color: white;
                         border-radius: 3px;
 
@@ -526,8 +545,172 @@ a:hover {
     
 
 @media screen and (max-width: 878px) {
+
+    .wrapper {
+        .top {
+            main {
+                .album {
+                    .row {
+                        .col_md_3 {
+
+                            width: calc(100% / 12 * 3);
+
+
+                            .card {
+                                .card_head {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
      
-    .col_md_3 {
-        width: calc(100% /12 * 3);
+    
+}
+
+@media screen and (max-width: 639px) {
+
+    .wrapper {
+        .top {
+            main {
+                .album {
+                    .row {
+                        .col_sm_6 {
+
+                            width: calc(100% / 12 * 6);
+
+
+                            .card {
+                                .card_head {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            .like_song {
+                width: 155px;
+            }
+
+            .player {
+                .commands {
+                    width: 90%;
+                }
+            }
+
+            .volume {
+                width: 190px;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 552px) {
+    .wrapper {
+        .top {
+            .sidebar {
+
+                width: 50px;
+
+                .logo {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+
+                    .logo_big {
+                        display: none;
+                    }
+                
+
+
+                    .logo_small {
+                        display: block;
+                        width: 44%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .list {
+                    li {
+                        a {
+                            visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 100%;
+                        }
+                        .list_side_top {
+                           visibility: visible;
+                           margin: 0;
+                        }
+                    }
+
+                    .playlist {
+                        visibility: hidden;
+                    }
+
+                    .bott_list {
+                        visibility: hidden;
+                    }
+                }
+
+                .list_side_bottom  {
+                    
+                    padding: 0;
+
+                    a {
+
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+
+                        .list_side_bottom_visible {
+                        visibility: visible;
+                        margin: 0;
+                        
+                        }
+
+                        p {
+                            display: none;
+                        }
+
+                    }
+
+                    hr {
+                        display: none;
+                    }
+
+
+
+                    
+                }
+            }
+
+            main {
+                width: calc(100% - 50px)
+            }
+
+            
+        }
     }
 }
+    
+
